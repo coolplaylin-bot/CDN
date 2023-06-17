@@ -2,7 +2,6 @@ name: metrics
 
 on:
   schedule: [{ cron: 0 * * * * }]
-  workflow_dispatch:
 
 jobs:
   metrics:
@@ -16,32 +15,3 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           base: header, repositories
           plugin_lines: yes
-  random:
-    runs-on: ubuntu-latest
-    needs: metrics
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3.5.3
-        with:
-          token: ${{ secrets.COOLPLAYLIN_BOT_TOKEN }}
-      - name: Setup Information
-        run: |
-          git config --global user.email 130831920+coolplaylinbot@users.noreply.github.com
-          git config --global user.name coolplaylinbot
-      - name: Setup Python Environment
-        uses: actions/setup-python@v4
-        with:
-          python-version: "3.11.0"
-      - name: Install
-        run: python3 -m pip install -r requirements.txt
-      - name: Run Update IMAGE
-        run: python3 src/image.py
-      - name: Push to master
-        run: |
-          if [[ -n $(git status -s) ]]; then
-          git add .
-          git commit -m "Update"
-          git push origin master --force
-          else
-          echo "No Change, Bye bye!"
-          fi
