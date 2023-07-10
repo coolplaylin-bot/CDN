@@ -75,7 +75,7 @@ def main():
             raise error
 
     print(
-        f"We have got the response(URL: {response.url}), We're going to write-in")
+        f"We have got the response( URL: {response.url} ), We're going to write-in")
     with open(PATH, "wb+") as f:
         f.write(response.content)
     if Archive:
