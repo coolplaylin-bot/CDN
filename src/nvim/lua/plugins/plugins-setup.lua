@@ -50,7 +50,8 @@ return require('packer').startup(function(use)
     local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
     ts_update()
         end,
-    }
+  }
+  use "p00f/nvim-ts-rainbow"
 
   -- 括号&注释
   use "numToStr/Comment.nvim"
