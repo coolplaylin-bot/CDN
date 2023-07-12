@@ -59,10 +59,17 @@ return require('packer').startup(function(use)
   use "akinsho/bufferline.nvim"
   use "lewis6991/gitsigns.nvim"
 
+  -- 文件&代码搜索
   use {
-    "nvim-telescope/telescope.nvim", tag = '0.1.2',
-    requires = { {'nvim-lua/plenary.nvim'} }
+        "nvim-telescope/telescope.nvim", tag = '0.1.2',
+         requires = { {'nvim-lua/plenary.nvim'} }
   }
+
+  -- 集成终端
+  use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+       require("toggleterm").setup()
+  end}
+
   if packer_bootstrap then
     require('packer').sync()
   end
