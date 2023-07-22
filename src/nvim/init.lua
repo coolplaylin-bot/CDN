@@ -1,9 +1,7 @@
--- options
-require("core.options")
-require("core.keymaps")
+-- Packer
+require("plugins.plugins-setup")
 
 -- plugins
-require("plugins.plugins-setup")
 require("plugins.lualine")
 require("plugins.nvim-tree")
 require("plugins.lsp")
@@ -15,3 +13,7 @@ require("plugins.bufferline")
 require("plugins.telescope")
 require("plugins.treesitter")
 require("plugins.toggleterm")
+
+-- options
+require("core.options")
+require("core.keymaps")
