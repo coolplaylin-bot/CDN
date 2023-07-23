@@ -1,9 +1,12 @@
 ﻿#include <iostream>
+#include <ctime>
 
 using namespace std;
 
 int main()
 {
+    // using time
+    srand((unsigned int)time(NULL));
     int answer = rand() % 100 + 1;
     int res;
     cout << "Type a number: ";
