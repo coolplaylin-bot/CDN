@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    // using time
+    // using time to generate number
     srand((unsigned int)time(NULL));
     int answer = rand() % 100 + 1;
     int res;
