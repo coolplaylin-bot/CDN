@@ -6,7 +6,7 @@ using namespace std;
 __declspec(dllexport) int desk()
 {
     int x, y, z;
-    const int num = 11;
+    const int num = 7;
     for (int i = 1; i <= 100; i++)
     {
         x = i % 10;

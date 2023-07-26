@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="array1.1.cpp" />
     <ClCompile Include="for1.1.cpp" />
     <ClCompile Include="for1.2.cpp" />
     <ClCompile Include="main.cpp" />

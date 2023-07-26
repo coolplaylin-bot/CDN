@@ -9,9 +9,8 @@ __declspec(dllexport) int NestedFor()
 	{
 		for (int i = 1; i <= 10; i++)
 		{
-			cout << "*";
+			cout << "*" << " ";
 		}
 		cout << endl;
-	}
-	return 0;
+	\	return 0;
 }
