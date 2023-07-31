@@ -2,13 +2,15 @@
 #include <Windows.h>
 extern int desk();
 extern int NestedFor();
+extern int array();
 
 int main()
 {
 	while (true) {
-		desk();
+		array();
+		/* desk();
 		NestedFor();
-		Sleep(10);
+		*/
 	}
 	return 0;
 }

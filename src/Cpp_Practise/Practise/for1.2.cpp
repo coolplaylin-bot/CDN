@@ -12,5 +12,8 @@ __declspec(dllexport) int NestedFor()
 			cout << "*" << " ";
 		}
 		cout << endl;
-	\	return 0;
+		return 0;
+	}
+
+	return 0;
 }
