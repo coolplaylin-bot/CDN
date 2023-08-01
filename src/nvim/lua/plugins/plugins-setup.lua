@@ -20,7 +20,7 @@ return require('packer').startup(function(use)
   use 'folke/tokyonight.nvim' -- 主题
   use {
     'nvim-lualine/lualine.nvim',
-    requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    requires = { 'nvim-tree/nvim-web-devicons'}
   }
   use {
     'nvim-tree/nvim-tree.lua',
@@ -64,12 +64,10 @@ return require('packer').startup(function(use)
         "nvim-telescope/telescope.nvim", tag = '0.1.2',
          requires = { {'nvim-lua/plenary.nvim'} }
   }
-
   -- 集成终端
   use {"akinsho/toggleterm.nvim", tag = '*', config = function()
        require("toggleterm").setup()
   end}
-
   if packer_bootstrap then
     require('packer').sync()
   end
