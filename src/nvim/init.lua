@@ -13,7 +13,8 @@ require("plugins.bufferline")
 require("plugins.telescope")
 require("plugins.treesitter")
 require("plugins.toggleterm")
-
+require("plugins.neoformat")
+require("plugins.neogit")
 -- options
 require("core.options")
 require("core.keymaps")
