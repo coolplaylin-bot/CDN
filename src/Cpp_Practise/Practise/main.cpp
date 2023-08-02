@@ -6,11 +6,9 @@ extern int array();
 
 int main()
 {
-	while (true) {
-		array();
-		/* desk();
-		NestedFor();
-		*/
-	}
+	array();
+	/* desk();
+	NestedFor();
+	*/
 	return 0;
 }
