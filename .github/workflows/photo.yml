@@ -23,6 +23,8 @@ jobs:
         run: python3 -m pip install -r requirements.txt
       - name: Update Photo
         run: python3 src/photo.py
+      - name: Update Words
+        run: python3 src/word.py
       - name: Push to master
         run: |
           if [[ -n $(git status -s) ]]; then
