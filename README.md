@@ -10,5 +10,5 @@
 [![](https://gh.api-go.asia/https://raw.githubusercontent.com/CoolPlayLin/CoolPlayLin/master/github-snake.svg)](https://github.com/CoolPlayLin)
 
 ```
-你之所以相信一个人说的话,是因为他说了你想听的话。 --克莱儿·麦克福尔
+人のエゴで造られた 虚にだけはなりたくはなくて。 --美波
 ```
