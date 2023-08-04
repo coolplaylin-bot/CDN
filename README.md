@@ -10,5 +10,5 @@
 [![](https://gh.api-go.asia/https://raw.githubusercontent.com/CoolPlayLin/CoolPlayLin/master/github-snake.svg)](https://github.com/CoolPlayLin)
 
 ```
-黑暗的环境容易做错事。 --某中学数学老师
+数人世相逢，百年欢笑，能得几回又。 --何梦桂
 ```
