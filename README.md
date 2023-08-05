@@ -10,5 +10,5 @@
 [![](https://gh.api-go.asia/https://raw.githubusercontent.com/CoolPlayLin/CoolPlayLin/master/github-snake.svg)](https://github.com/CoolPlayLin)
 
 ```
-数人世相逢，百年欢笑，能得几回又。 --何梦桂
+萤火之光看起来比平常要更耀眼是错觉吗？今宵会成为永夜的吧。 --None
 ```
