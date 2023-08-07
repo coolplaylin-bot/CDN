@@ -10,5 +10,5 @@
 [![](https://gh.api-go.asia/https://raw.githubusercontent.com/CoolPlayLin/CoolPlayLin/master/github-snake.svg)](https://github.com/CoolPlayLin)
 
 ```
-就像那句狠话：有一天，我一定会后悔的。 --此账号已注销
+成长的过程就是人生的意义。 --玖⁠
 ```
