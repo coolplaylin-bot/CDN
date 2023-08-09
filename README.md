@@ -10,5 +10,5 @@
 [![](https://gh.api-go.asia/https://raw.githubusercontent.com/CoolPlayLin/CoolPlayLin/master/github-snake.svg)](https://github.com/CoolPlayLin)
 
 ```
-有志者，事竟成。 --None
+所谓辉煌的人生，不过是欲望的囚徒。 --叔本华
 ```
