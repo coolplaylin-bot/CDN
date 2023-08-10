@@ -20,9 +20,6 @@ vim.cmd(
 return require("packer").startup(
     function(use)
         use "wbthomason/packer.nvim"
-        use "sbdchd/neoformat"
-        use "TimUntersberger/neogit"
-        use "folke/tokyonight.nvim" -- 主题
         use {
             "nvim-lualine/lualine.nvim",
             requires = {"nvim-tree/nvim-web-devicons"}
@@ -33,20 +30,26 @@ return require("packer").startup(
                 "nvim-tree/nvim-web-devicons" -- optional
             }
         }
-        use "christoomey/vim-tmux-navigator"
         use {
             "williamboman/mason.nvim",
             "williamboman/mason-lspconfig.nvim",
-            "neovim/nvim-lspconfig"
+            "neovim/nvim-lspconfig",
+            "christoomey/vim-tmux-navigator",
+            "glepnir/lspsaga.nvim",
+            "sbdchd/neoformat",
+            "TimUntersberger/neogit",
+            "folke/tokyonight.nvim" -- 主题
         }
 
         -- 自动补全
-        use "hrsh7th/nvim-cmp"
-        use "hrsh7th/cmp-nvim-lsp"
-        use "L3MON4D3/LuaSnip"
-        use "saadparwaiz1/cmp_luasnip"
-        use "rafamadriz/friendly-snippets"
-        use "hrsh7th/cmp-path"
+        use {
+            "hrsh7th/nvim-cmp",
+            "hrsh7th/cmp-nvim-lsp",
+            "L3MON4D3/LuaSnip",
+            "saadparwaiz1/cmp_luasnip",
+            "rafamadriz/friendly-snippets",
+            "hrsh7th/cmp-path"
+        }
 
         -- 语法高亮
         use {
@@ -59,15 +62,16 @@ return require("packer").startup(
         use "p00f/nvim-ts-rainbow"
 
         -- 括号&注释
-        use "numToStr/Comment.nvim"
-        use "windwp/nvim-autopairs"
-        use "akinsho/bufferline.nvim"
-        use "lewis6991/gitsigns.nvim"
+        use {
+            "numToStr/Comment.nvim",
+            "windwp/nvim-autopairs",
+            "akinsho/bufferline.nvim",
+            "lewis6991/gitsigns.nvim"
+        }
 
         -- 文件&代码搜索
         use {
             "nvim-telescope/telescope.nvim",
-            tag = "0.1.2",
             requires = {{"nvim-lua/plenary.nvim"}}
         }
         -- 集成终端
@@ -78,6 +82,7 @@ return require("packer").startup(
                 require("toggleterm").setup()
             end
         }
+
         if packer_bootstrap then
             require("packer").sync()
         end
