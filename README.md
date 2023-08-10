@@ -10,5 +10,5 @@
 [![](https://gh.api-go.asia/https://raw.githubusercontent.com/CoolPlayLin/CoolPlayLin/master/github-snake.svg)](https://github.com/CoolPlayLin)
 
 ```
-所谓辉煌的人生，不过是欲望的囚徒。 --叔本华
+落叶别树，飘零随风。客无所托，悲与此同。 --李白
 ```
