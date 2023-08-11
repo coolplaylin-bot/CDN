@@ -10,5 +10,5 @@
 [![](https://gh.api-go.asia/https://raw.githubusercontent.com/CoolPlayLin/CoolPlayLin/master/github-snake.svg)](https://github.com/CoolPlayLin)
 
 ```
-落叶别树，飘零随风。客无所托，悲与此同。 --李白
+白马入芦花，银碗里盛雪。 --None
 ```
