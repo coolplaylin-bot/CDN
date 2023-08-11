@@ -1,5 +1,6 @@
 local lspconfig = require("lspconfig")
-
+require("luasnip.loaders.from_vscode").lazy_load()
+require("luasnip.loaders.from_snipmate").lazy_load()
 -- mason 配置
 require("mason-lspconfig").setup(
     {
@@ -39,7 +40,6 @@ lspconfig.pyright.setup(
 )
 
 -- vue yaml html css的lsp
-lspconfig.vls.setup({})
 lspconfig.yamlls.setup({})
 lspconfig.jsonls.setup({})
 lspconfig.html.setup({})
@@ -72,10 +72,6 @@ lspconfig.eslint.setup(
         end
     }
 )
-lspconfig.volar.setup {
-    filetypes = {"typescript", "javascript", "javascriptreact", "typescriptreact", "vue", "json"}
-}
-
 -- lua
 lspconfig.lua_ls.setup(
     {
@@ -107,3 +103,7 @@ lspconfig.lua_ls.setup(
         end
     }
 )
+
+lspconfig.volar.setup {
+    filetypes = {"typescript", "javascript", "javascriptreact", "typescriptreact", "vue", "json"}
+}

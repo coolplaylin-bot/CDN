@@ -35,10 +35,10 @@ return require("packer").startup(
             "williamboman/mason-lspconfig.nvim",
             "neovim/nvim-lspconfig",
             "christoomey/vim-tmux-navigator",
-            "glepnir/lspsaga.nvim",
             "sbdchd/neoformat",
             "TimUntersberger/neogit",
-            "folke/tokyonight.nvim" -- 主题
+            "folke/tokyonight.nvim", -- 主题
+            "rcarriga/nvim-notify"
         }
 
         -- 自动补全
