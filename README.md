@@ -11,7 +11,7 @@
 
 #### 奇怪的配置
 
-[Neovim配置](./src/nvim/README.md)
+- [Neovim配置](./src/nvim/README.md)
 
 #### 一言
 
