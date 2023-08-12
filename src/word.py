@@ -6,7 +6,8 @@ word = requests.get("https://v1.hitokoto.cn/", verify=False).json()
 
 with open(PATH, mode="r", encoding="utf-8") as f:
     README = f.readlines()
-    README[README.index("```\n")+1] = word["hitokoto"] + f" --{word['from_who']}" + "\n"
+    author = word['from_who'] if word['from_who'] != None else "佚名"
+    README[README.index("```\n")+1] = word["hitokoto"] + f" --{author}" + "\n"
     with open(PATH, "w+", encoding="utf-8") as w:
         w.writelines(README)
     
