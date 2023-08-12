@@ -1,9 +1,7 @@
 <script setup>
-const msg = "Hello World -- This is the Starter of Your Dream";
+import Demo from "./components/Demos.vue";
 </script>
 
 <template>
-  <p>{{ msg }}</p>
+<Demo />
 </template>
-
-<style scoped></style>
