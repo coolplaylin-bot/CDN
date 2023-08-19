@@ -37,7 +37,7 @@ return require("packer").startup(
             "christoomey/vim-tmux-navigator",
             "sbdchd/neoformat",
             "TimUntersberger/neogit",
-            "folke/tokyonight.nvim", -- 主题
+            "navarasu/onedark.nvim",
             "rcarriga/nvim-notify"
         }
 

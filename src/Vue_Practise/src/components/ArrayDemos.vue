@@ -82,7 +82,6 @@ export default {
 </template>
 
 <style>
-
 * {
   font-family: CaskaydiaCoveNerdFontMono;
 }
