@@ -1,11 +1,13 @@
 -- Packer
-require("plugins.plugins-setup")
+require("plugins-setup")
 
 -- plugins
 require("plugins.nvim-notify")
 require("plugins.lualine")
 require("plugins.nvim-tree")
-require("plugins.lsp")
+require("plugins.lsp.mason")
+require("plugins.lsp.lspsaga")
+require("plugins.lsp.lspconfig")
 require("plugins.cmp")
 require("plugins.comment")
 require("plugins.autopairs")
