@@ -1,7 +1,3 @@
-local notify_status, notify = pcall(require, "notify")
-if not notify_status then
-    return
-end
-
+local notify = require("notify")
 -- Setup nvim-notify as default notify of nvim
 vim.notify = notify
