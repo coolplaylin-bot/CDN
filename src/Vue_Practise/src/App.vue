@@ -7,7 +7,7 @@ import inputDemo from "./components/inputDemo.vue";
 </script>
 
 <template>
+  <inputDemo />
   <!-- <classDemo /> -->
   <!-- <watchDemo /> -->
-  <inputDemo />
 </template>
