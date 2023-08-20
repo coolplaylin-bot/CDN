@@ -1,4 +1,8 @@
-local lspconfig = require("lspconfig")
+local lspconfig_status, lspconfig = pcall(require, "lspconfig")
+if not lspconfig_status then
+    return
+end
+
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 local keymap = vim.keymap
 local on_attach = function(client, bufnr)
@@ -118,4 +122,9 @@ lspconfig.tsserver.setup {
     on_attach = on_attach,
     root_dir = lspconfig.util.root_pattern("package.json"),
     single_file_support = false
+}
+
+lspconfig.powershell_es.setup {
+    bundle_path = vim.env.PowerShellEditorServices,
+    shell = "pwsh.exe"
 }

@@ -1,3 +1,8 @@
+local nvim_treesitter_status, nvim_treesitter = pcall(require, "nvim-treesitter")
+if not nvim_treesitter_status then
+    return
+end
+
 require("nvim-treesitter.install").compilers = {"clang", "gcc"}
 require("nvim-treesitter.configs").setup {
     ensure_installed = {

@@ -2,6 +2,7 @@
 require("plugins-setup")
 
 -- plugins
+require("plugins.theme")
 require("plugins.nvim-notify")
 require("plugins.lualine")
 require("plugins.nvim-tree")
