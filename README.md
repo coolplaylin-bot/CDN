@@ -9,12 +9,9 @@
 
 [![](https://gh.api-go.asia/https://raw.githubusercontent.com/CoolPlayLin/CoolPlayLin/master/github-snake.svg)](https://github.com/CoolPlayLin)
 
-#### 奇怪的配置
-
-- [Neovim配置](./src/nvim/README.md)
-
 #### 一言
 
 ```
-我打架很厉害的，身体疼没什么了不起，心里疼才会哭 --佚名
+抵制日本政府排放核污染水 --我们的明天将失去海洋
+Boycott Japan Government Release Nuclear Sewage --WE WILL LOSE OUR OCEAN SOON
 ```

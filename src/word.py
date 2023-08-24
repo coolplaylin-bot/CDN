@@ -1,6 +1,9 @@
 import pathlib
 import requests
 
+if (pathlib.Path(__file__).parents[1] / "block").exists():
+    print("The current run has been blocked")
+    exit(0)
 PATH = pathlib.Path(__file__).parents[1] / "README.md"
 word = requests.get("https://v1.hitokoto.cn/", verify=False).json()
 
