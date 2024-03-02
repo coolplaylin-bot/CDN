@@ -2,16 +2,20 @@ from time import sleep, time
 import requests
 import random
 import pathlib
+import json
 import os
+
+if (pathlib.Path(__file__).parents[1] / "config.json").exists():
+    with open(pathlib.Path(__file__).parents[1] / "config.json", "r", encoding="utf-8") as f:
+        config = json.load(f)
+        if not config["Photo"]:
+            print("Photo Upgrader has been disabled")
+            exit(0)
 
 # Setup
 apis = ["https://api.gumengya.com/Api/DmImgS?format=image", "https://api.gumengya.com/Api/FjImg?format=image", "https://api.paugram.com/wallpaper/"]
 PATH = pathlib.Path(__file__).parents[1] / "photo.png"
 HISTORY_PATH = pathlib.Path(__file__).parents[1] / "assets"
-
-if (pathlib.Path(__file__).parents[1] / "block").exists():
-    print("The current run has been blocked")
-    exit(0)
 
 
 def main():
