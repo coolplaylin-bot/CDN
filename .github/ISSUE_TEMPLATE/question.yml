@@ -8,8 +8,9 @@ body:
   - type: markdown
     attributes:
       value: |
-        I will reply your question if I am interested in it.
-        If I am NOT interested in your question, your issue might be closed directly.
+        ## Some facts you might need to attention
+        1. I will reply your question if I am interested in it.
+        2. If I am NOT interested in your question, your issue might be closed directly.
   - type: textarea
     attributes:
       label: Description details of a questions
