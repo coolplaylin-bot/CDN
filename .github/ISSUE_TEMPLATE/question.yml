@@ -13,7 +13,7 @@ body:
         2. If I am NOT interested in your question, your issue might be closed directly.
   - type: textarea
     attributes:
-      label: Description details of a questions
+      label: Describe details of your questions
       description: Tell me your questions
       placeholder: Type the questions here
     validations:
