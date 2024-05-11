@@ -13,7 +13,7 @@ if (pathlib.Path(__file__).parents[1] / "config.json").exists():
             exit(0)
 
 # Setup
-apis = ["https://api.gumengya.com/Api/DmImgS?format=image", "https://api.gumengya.com/Api/FjImg?format=image", "https://api.paugram.com/wallpaper/"]
+apis = ["https://api.gumengya.com/Api/FjImg?format=image"]
 PATH = pathlib.Path(__file__).parents[1] / "photo.png"
 HISTORY_PATH = pathlib.Path(__file__).parents[1] / "assets"
 
