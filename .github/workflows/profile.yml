@@ -1,0 +1,18 @@
+name: Profile
+
+on:
+  schedule: [{ cron: 0 * * * * }]
+  workflow_dispatch:
+
+jobs:
+  metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - name: metrics
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.classic.svg
+          committer_token: ${{ secrets.COOLPLAYLIN_BOT_TOKEN }}
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: header, repositories
+          plugin_lines: yes

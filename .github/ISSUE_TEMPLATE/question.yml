@@ -1,0 +1,25 @@
+name: "❓ Questions about CoolPlayLin"
+title: "❓Question: "
+description: Submit a reasonable issue that asks the personal questions.
+labels:
+  - "Questions"
+  - "help wanted"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Some facts you might need to attention
+        1. I will reply your question if I am interested in it.
+        2. If I am NOT interested in your question, your issue might be closed directly.
+  - type: textarea
+    attributes:
+      label: Describe details of your questions
+      description: Tell me your questions
+      placeholder: Type the questions here
+    validations:
+     required: true
+  - type: textarea
+    attributes:
+      label: Additional Information
+      description: Tell me your additional information about the questions
+      placeholder: Type additional information here
